@@ -1,86 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ToolHub TH</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<title>ToolHub TH | เครื่องมือออนไลน์ฟรี</title>
 
-body{
-background:#f5f7fb;
-}
-
-header{
-background:#2563eb;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-header h1{
-font-size:40px;
-}
-
-header p{
-margin-top:10px;
-}
-
-.search{
-max-width:700px;
-margin:30px auto;
-padding:0 20px;
-}
-
-.search input{
-width:100%;
-padding:15px;
-font-size:18px;
-border-radius:10px;
-border:none;
-box-shadow:0 0 10px rgba(0,0,0,.1);
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-transition:.3s;
-cursor:pointer;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h2{
-margin-bottom:10px;
-color:#2563eb;
-}
-
-footer{
-margin-top:40px;
-padding:30px;
-text-align:center;
-color:#777;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -90,64 +17,43 @@ color:#777;
 
 <h1>🛠 ToolHub TH</h1>
 
-<p>รวมเครื่องมือออนไลน์ฟรี ใช้งานง่าย สำหรับทุกคน</p>
+<p>เครื่องมือออนไลน์ฟรี สำหรับนักเรียน นักศึกษา และทุกคน</p>
+
+<input
+type="text"
+placeholder="🔍 ค้นหาเครื่องมือ..."
+id="search"
+>
 
 </header>
 
-<div class="search">
+<main>
 
-<input type="text" placeholder="ค้นหาเครื่องมือ...">
+<a href="tools/percentage.html" class="tool">
 
-</div>
-
-<div class="container">
-
-<a href="tools/percentage.html" style="text-decoration:none;color:inherit;">
-<div class="card">
 <h2>🧮 เครื่องคิดเปอร์เซ็นต์</h2>
+
 <p>คำนวณเปอร์เซ็นต์ได้ทันที</p>
-</div>
+
 </a>
 
-  <a href="tools/word-counter.html" style="text-decoration:none;color:inherit;">
-<div class="card">
+<a href="tools/word-counter.html" class="tool">
+
 <h2>📝 Word Counter</h2>
+
 <p>นับจำนวนคำ ตัวอักษร และประโยค</p>
-</div>
+
 </a>
-  
-<div class="card">
-<h2>🎓 GPA Calculator</h2>
-<p>คำนวณเกรดเฉลี่ย</p>
-</div>
 
-<div class="card">
-<h2>🔐 Password Generator</h2>
-<p>สุ่มรหัสผ่านปลอดภัย</p>
-</div>
-
-<div class="card">
-<h2>📱 QR Code</h2>
-<p>สร้าง QR Code ฟรี</p>
-</div>
-
-<div class="card">
-<h2>📝 นับจำนวนคำ</h2>
-<p>นับคำและตัวอักษร</p>
-</div>
-
-<div class="card">
-<h2>📄 PDF Tools</h2>
-<p>เครื่องมือสำหรับ PDF</p>
-</div>
-
-</div>
+</main>
 
 <footer>
 
-© 2026 ToolHub TH
+<p>© 2026 ToolHub TH</p>
 
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
